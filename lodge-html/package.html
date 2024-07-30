@@ -84,11 +84,11 @@
                 <div class="col-md-6">
                     <div class="detail-box">
                         <div class="heading_container">
-                            <h2>
-                                About Jewellery Shop
+                            <h2 id="package-title">
+                                About Package
                             </h2>
                         </div>
-                        <p>
+                        <p id="package-description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et
                             dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet,
@@ -106,18 +106,15 @@
                 </div>
                 <div class="col-md-6">
                     <div class="img-box">
-                        <img src="images/about-img.png" alt="">
+                        <img id="package-image" src="images/gold-image.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
     <!-- end contact section -->
 
-    <!-- info section -->
     <!-- info section -->
     <section class="info_section ">
         <div class="container">
@@ -220,6 +217,49 @@
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+
+    <script>
+        // Function to get URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        };
+
+        // Define package data
+        const packages = {
+            1: {
+                title: "Package 1",
+                description: "Description for Package 1.",
+                image: "images/gold-image.png"
+            },
+            2: {
+                title: "Package 2",
+                description: "Description for Package 2.",
+                image: "images/gold-image.png"
+            },
+            3: {
+                title: "Package 3",
+                description: "Description for Package 3.",
+                image: "images/gold-image.png"
+            }
+        };
+
+        // Get the 'pack' parameter from the URL
+        const pack = getUrlParameter('pack');
+
+        // Update the page content based on the 'pack' parameter
+        if (packages[pack]) {
+            document.getElementById('package-title').textContent = packages[pack].title;
+            document.getElementById('package-description').textContent = packages[pack].description;
+            document.getElementById('package-image').src = packages[pack].image;
+        } else {
+            document.getElementById('package-title').textContent = "Package Not Found";
+            document.getElementById('package-description').textContent = "The package you are looking for does not exist.";
+            document.getElementById('package-image').src = "images/notfound.png";
+        }
+    </script>
 </body>
 
 </html>
