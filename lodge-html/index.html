@@ -154,6 +154,66 @@
         width: 50px;
       }
     }
+
+    .item_section {
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .item_container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .box {
+      border: 1px solid #d4af37;
+      /* Gold border */
+      padding: 20px;
+      text-align: center;
+      background-color: white;
+      width: 30%;
+    }
+
+    .price h6 {
+      color: #d4af37;
+      /* Gold color */
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .img-box img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .name h5 {
+      color: #d4af37;
+      /* Gold color */
+      font-size: 22px;
+      margin: 10px 0;
+    }
+
+    .details p {
+      color: black;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .item_container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    }
   </style>
 </head>
 
@@ -211,15 +271,16 @@
           </span>
           <hr>
           <span class="jwel">
-            J <br>
-            e <br>
             w <br>
-            e <br>
-            l <br>
-            l <br>
-            e <br>
+            o <br>
             r <br>
-            y
+            k <br>
+            a <br>
+            r <br>
+            o <br>
+            u <br>
+            n <br>
+            d
           </span>
           <hr>
           <span>
@@ -230,9 +291,9 @@
       <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -240,15 +301,15 @@
                 <div class="col-md-6">
                   <div class="detail_box">
                     <h2>
-                      <span> New Collection</span>
+
                       <hr>
                     </h2>
                     <h1>
                       Invest in gold now
                     </h1>
                     <p>
-                      Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felislacinia
-                      aptent taciti sociosqu ad litora torquent per conubia nostra
+                      Investing in gold has now became one of the most important investment in the current times
+                      beacause of uncertainty and unpredictable downfall of money
                     </p>
                     <div>
                       <a href="">Shop Now</a>
@@ -267,15 +328,15 @@
                 <div class="col-md-6">
                   <div class="detail_box">
                     <h2>
-                      <span> New Collection</span>
+
                       <hr>
                     </h2>
                     <h1>
-                      Invest in gold now
+                      Invest in raw gold here in workaround
                     </h1>
                     <p>
-                      Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felislacinia
-                      aptent taciti sociosqu ad litora torquent per conubia nostra
+                      Investing in gold has now became one of the most important investment in the current times
+                      beacause of uncertainty and unpredictable downfall of money
                     </p>
                     <div>
                       <a href="">Shop Now</a>
@@ -294,15 +355,15 @@
                 <div class="col-md-6">
                   <div class="detail_box">
                     <h2>
-                      <span> New Collection</span>
+
                       <hr>
                     </h2>
                     <h1>
                       Invest in gold now
                     </h1>
                     <p>
-                      Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felislacinia
-                      aptent taciti sociosqu ad litora torquent per conubia nostra
+                      Investing in gold has now became one of the most important investment in the current times
+                      beacause of uncertainty and unpredictable downfall of money
                     </p>
                     <div>
                       <a href="">Shop Now</a>
@@ -329,54 +390,64 @@
   <div class="item_section layout_padding2">
     <div class="container">
       <div class="item_container">
+        <!-- Package 1 -->
         <div class="box">
           <div class="price">
-            <h6>
-              Best PRICE
-            </h6>
+            <h6>Best PRICE</h6>
           </div>
           <div class="img-box">
-            <img src="images/—Pngtree—a gold bar_5613639.png" alt="">
+            <img src="images/—Pngtree—a gold bar_5613639.png" alt="Gold bar">
           </div>
           <div class="name">
-            <h5>
-              gold bars
-            </h5>
+            <h5>Gold Investment Pack</h5>
+          </div>
+          <div class="details">
+            <p><span class="badge badge-warning">$10,000</span> </p>
+            <p><span class="badge badge-info">250g</span></p>
+            <p><span class="badge badge-secondary">99.99%</span></p>
+
           </div>
         </div>
+
+        <!-- Package 2 -->
         <div class="box">
           <div class="price">
-            <h6>
-              Best PRICE
-            </h6>
+            <h6>Best PRICE</h6>
           </div>
           <div class="img-box">
-            <img src="images/—Pngtree—a gold bar_5613639.png" alt="">
+            <img src="images/—Pngtree—a gold bar_5613639.png" alt="Gold bar">
           </div>
           <div class="name">
-            <h5>
-              gold bars
-            </h5>
+            <h5>Gold Investment Pack</h5>
+          </div>
+          <div class="details">
+            <p><span class="badge badge-warning">$30,000</span> </p>
+            <p><span class="badge badge-info">750g</span></p>
+            <p><span class="badge badge-secondary">99.99%</span></p>
           </div>
         </div>
+
+        <!-- Package 3 -->
         <div class="box">
           <div class="price">
-            <h6>
-              Best PRICE
-            </h6>
+            <h6>Best PRICE</h6>
           </div>
           <div class="img-box">
-            <img src="images/—Pngtree—a gold bar_5613639.png" alt="">
+            <img src="images/—Pngtree—a gold bar_5613639.png" alt="Gold bar">
           </div>
           <div class="name">
-            <h5>
-              gold bars
-            </h5>
+            <h5>Gold Investment Pack</h5>
+          </div>
+          <div class="details">
+            <p><span class="badge badge-warning">$50,000</span> </p>
+            <p><span class="badge badge-info">1250g</span></p>
+            <p><span class="badge badge-secondary">99.99%</span></p>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 
   <!-- end item section -->
 
@@ -396,13 +467,13 @@
               </h2>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud
+              Investing in gold can often be a prudent choice for those seeking to diversify their portfolios, hedge
+              against inflation, and protect their assets during economic uncertainty. Gold's enduring value and its
+              role as a safe haven asset make it a compelling investment, particularly in volatile or unpredictable
+              markets.
             </p>
             <div>
-              <a href="">
+              <a href="./about.html">
                 Read More
               </a>
             </div>
@@ -432,15 +503,19 @@
         <div class="box">
           <div class="name">
             <h6>
-              gold bars
+              package one
             </h6>
           </div>
           <div class="img-box">
             <img src="images/—Pngtree—a gold bar_5613639.png" alt="">
           </div>
           <div class="detail-box">
+            <div class="details">
+              <p><span class="badge badge-warning">250g</span></p>
+              <p><span class="badge badge-warning">99.99%</span></p>
+            </div>
             <h5>
-              $<span>1000.00</span>
+              $<span>10000.00</span>
             </h5>
             <a href="">
               Buy Now
@@ -457,8 +532,13 @@
             <img src="images/—Pngtree—a gold bar_5613639.png" alt="">
           </div>
           <div class="detail-box">
+            <div class="details">
+              <p><span class="badge badge-warning">250g</span></p>
+              <p><span class="badge badge-warning">99.99%</span></p>
+
+            </div>
             <h5>
-              $<span>1000.00</span>
+              $<span>30000.00</span>
             </h5>
             <a href="">
               Buy Now
@@ -475,8 +555,13 @@
             <img src="images/—Pngtree—a gold bar_5613639.png" alt="">
           </div>
           <div class="detail-box">
+            <div class="details">
+              <p><span class="badge badge-warning">250g</span></p>
+              <p><span class="badge badge-warning">99.99%</span></p>
+
+            </div>
             <h5>
-              $<span>1000.00</span>
+              $<span>50000.00</span>
             </h5>
             <a href="">
               Buy Now
@@ -498,7 +583,7 @@
 
   <section class="ring_section layout_padding">
     <div class="design-box">
-      <img src="images/design-1.png" alt="">
+      <img src="images/—Pngtree—a gold bar_5613639.png" alt="">
     </div>
     <div class="container">
       <div class="ring_container layout_padding2">
@@ -527,20 +612,20 @@
   </section>
 
   <!-- end ring section -->
-  <section class="body">
+  <!-- <section class="body">
     <div class="container-why">
       <div class="person-container">
         <img src="./images/ceo-removebg-preview.png" alt="Sabri Werdianne Becha" class="person left">
-        <!-- <p class="person-name">Sabri Werdianne Becha<br>Founder workaround LLC.</p> -->
+        <p class="person-name">Sabri Werdianne Becha<br>Founder workaround LLC.</p>
       </div>
 
       <div class="person-container">
         <img src="./images/WhatsApp_Image_2024-07-21_at_10.21.32_PM-removebg-preview.png" alt="Someone Someone"
           class="person right">
-        <!-- <p class="person-name">Aymen belcaid<br>Co-Founder workaround LLC.</p> -->
+        <p class="person-name">Aymen belcaid<br>Co-Founder workaround LLC.</p>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- client section -->
 
   <section class="client_section mt-5">
@@ -796,6 +881,10 @@
   <script type=" text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
+
+  <script>
+    //document.body.classList.toggle('dark-mode');
+  </script>
 </body>
 
 </html>
